@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="arrayStudyDurations">
+        <item> Hours </item>
+        <item> Minutes </item>
+    </string-array>
+
+</resources>

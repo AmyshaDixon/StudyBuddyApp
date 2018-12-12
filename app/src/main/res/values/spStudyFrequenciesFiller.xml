@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="arrayStudyFrequencies">
+        <item> Everyday </item>
+        <item> Every week </item>
+        <item> Every month </item>
+        <item> Just once </item>
+    </string-array>
+
+</resources>

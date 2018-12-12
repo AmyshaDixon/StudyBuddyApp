@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/awakeraccoon"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/addSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:onClick="clickAddSession"
+            android:text="\u002b"
+            android:textSize="53dp"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="167dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/editSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:onClick="clickEditSession"
+            android:text="\u270e"
+            android:textSize="40dp"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="241dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/openCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:onClick="clickOpenCalendar"
+            android:text="Calendar"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="316dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/openAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:text="\u2e85"
+            android:textSize="38dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="393dp" />
+    </TableRow>
+
+</TableLayout>

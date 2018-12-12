@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanASessionActivity">
+
+    <ImageView
+        android:id="@+id/ivRaccoonPASSFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/raccoonface"/>
+
+    <TextView
+        android:id="@+id/tvPagePASSHeader"
+        android:background="@android:drawable/alert_light_frame"
+        android:text="Plan a Study Session"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <TableRow
+        android:id="@+id/trStudyTopic"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp">
+        <TextView
+            android:id="@+id/tvStudyTopic"
+            android:text="I want to study "
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/etStudyTopic"
+            android:inputType="text"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trStudyMeasurement"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp">
+
+        <TextView
+            android:id="@+id/tvStudyMeasurement"
+            android:text="and measure it by "
+            android:textAlignment="center"/>
+
+        <Spinner
+            android:id="@+id/spStudyMeasurement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </Spinner>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trStudyFrequency"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp">
+
+        <TextView
+            android:id="@+id/tvStudyFrequency"
+            android:text="at the frequency of "
+            android:textAlignment="center"/>
+
+        <Spinner
+            android:id="@+id/spStudyFrequency"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </Spinner>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trStudyDuration"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp">
+
+        <TextView
+            android:id="@+id/tvStudyDuration"
+            android:text="for "
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/etStudyDuration"
+            android:inputType="text"/>
+
+        <Spinner
+            android:id="@+id/spStudyDuration"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp">
+        </Spinner>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp">
+
+        <TextView
+            android:text="Calendar Color: "
+            android:textAlignment="center"
+            android:layout_span="2"/>
+
+        <LinearLayout
+            android:id="@+id/lyPASColorBox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            tools:background="#000"
+            android:layout_span="2"
+            android:onClick="clickOpenColorPicker"/>
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnAddNewSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:onClick="clickAddSessionDB"
+            android:text="\u2714"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="167dp"
+            android:layout_span="3"/>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditASessionActivity">
+
+    <ImageView
+        android:id="@+id/ivRaccoonPASSFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/raccoonface"/>
+
+    <TextView
+        android:id="@+id/tvPagePASSHeader"
+        android:background="@android:drawable/alert_light_frame"
+        android:text="Edit a Session"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/studySessionList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp" />
+
+    <TableRow
+        android:layout_marginTop="150dp">
+
+        <Button
+            android:id="@+id/btnEditEDAS"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="\u270e"
+            android:textSize="37dp"
+            android:paddingTop="0dp"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd" />
+
+        <Button
+            android:id="@+id/btnDeleteEDAS"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="\u2717"
+            android:textSize="37dp"
+            android:paddingTop="0dp"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"/>
+    </TableRow>
+
+</TableLayout>

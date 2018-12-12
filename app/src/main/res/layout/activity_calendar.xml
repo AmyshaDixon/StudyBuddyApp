@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+    <ImageView
+        android:id="@+id/raccoonVCFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/raccoonface"/>
+
+    <TextView
+        android:id="@+id/pageVCHeader"
+        android:background="@android:drawable/alert_light_frame"
+        android:text="View Calendar"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <TableRow>
+        <CalendarView
+            android:id="@+id/mainCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:layout_weight="1"
+            android:layout_span="4"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/studySessionInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Selected study session info will be displayed here "
+        android:textAlignment="center"
+        android:layout_marginTop="2dp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="\u002b"
+            android:textSize="37dp"
+            android:paddingTop="0dp"
+            android:onClick="clickBtnAdd"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="\u270e"
+            android:textSize="37dp"
+            android:paddingTop="0dp"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="\u2717"
+            android:textSize="37dp"
+            android:paddingTop="0dp"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"/>
+    </TableRow>
+
+</TableLayout>
