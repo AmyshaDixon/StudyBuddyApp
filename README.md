@@ -3,3 +3,5 @@ A bare-bones partial for android programing practice in CPW 252. StudyBuddyApp c
 and do not belong to the StudyBuddyApp author. StudyBuddy app was meant to be a study time planner with a "study buddy" animal widget that
 timed each study session. App currently has a database and general application stucture, but no full calender or selection functionality;
 images are eventually meant to be repalced with original content.
+
+![alt text](http://drive.google.com/uc?export=view&id=1rCFi2NAXV-7ZsstjWFBYBLSJKi4AyEF5)
